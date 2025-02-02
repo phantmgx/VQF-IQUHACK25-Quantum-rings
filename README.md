@@ -3,9 +3,7 @@
 ## Overview
 This repository contains a variational (optimization-based) implementation for integer factorization using Qiskit. Instead of using Shor's algorithm, this approach encodes candidate factors into a bitstring, uses a parameterized quantum circuit (ansatz) to generate a probability distribution over possible factors, and then minimizes the cost function:
 
-\[
-\text{Cost} = \Bigl(N - (p \times q)\Bigr)^2,
-\]
+Cost=(N-(p*q))^2
 
 where the output bitstring is split into two parts corresponding to the binary representations of factors \(p\) and \(q\). This method is promising for near-term quantum devices (NISQ) due to its shallow circuit depth.
 
